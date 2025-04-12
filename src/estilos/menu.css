@@ -1,0 +1,58 @@
+/* Menu.css */
+
+/* Estilo general del contenedor del menú */
+nav {
+    background: linear-gradient(90deg, #4c6ef5, #6f42c1); /* Degradado atractivo para la tienda de juegos */
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  }
+  
+  /* Estilo para la lista de elementos del menú */
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  /* Estilo para cada elemento de la lista */
+  li {
+    margin: 0 20px;
+    position: relative; /* Necesario para el efecto de subrayado */
+  }
+  
+  /* Estilo para los enlaces del menú */
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  /* Efecto de hover para cambiar el color */
+  a:hover {
+    color: #23ade0;
+  }
+  
+  /* Subrayado animado */
+  a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #23ade0;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
