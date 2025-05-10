@@ -1,6 +1,6 @@
 // src/paginas/Inicio.jsx
 import React from 'react';
-import '../estilos/inicio.css';  // Importa el archivo CSS
+import '../estilos/inicio.css';
 
 const Inicio = () => {
   return (
@@ -33,6 +33,21 @@ const Inicio = () => {
           <li>✔ Atención al cliente personalizada</li>
           <li>✔ Innovación constante</li>
         </ul>
+      </section>
+
+      {/* SECCIÓN DE DATOS/GRAFICO */}
+      <section className="seccion">
+        <h2>Datos en tiempo real</h2>
+        <div style={{ width: '100%', height: '500px' }}>
+          <iframe
+            title="archivoicomers"
+            width="100%"
+            height="100%"
+            src="https://app.powerbi.com/view?r=eyJrIjoiZmVkYjkxYjEtYjFhNC00NTRiLWExM2YtYzEwOWU1OGU3NzBiIiwidCI6ImI0YTQwNTQ1LTc3NzktNGIzOC1hZmY3LTFmMTczOGY4MDg0MCIsImMiOjR9"
+            frameBorder="0"
+            allowFullScreen={true}
+          ></iframe>
+        </div>
       </section>
     </div>
   );
